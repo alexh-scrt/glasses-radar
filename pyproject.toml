@@ -1,0 +1,58 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.backends.legacy:build"
+
+[project]
+name = "glasses-radar"
+version = "0.1.0"
+description = "Passive BLE scanner that detects smart glasses radio fingerprints"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [
+    { name = "glasses-radar contributors" }
+]
+keywords = ["bluetooth", "ble", "security", "privacy", "smart-glasses", "surveillance"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Environment :: Console",
+    "Intended Audience :: End Users/Desktop",
+    "Intended Audience :: Information Technology",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: POSIX :: Linux",
+    "Operating System :: MacOS",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Security",
+    "Topic :: System :: Networking :: Monitoring",
+]
+dependencies = [
+    "bleak>=0.21.1",
+    "rich>=13.7.0",
+]
+
+[project.scripts]
+glasses-radar = "glasses_radar.main:main"
+
+[project.urls]
+Homepage = "https://github.com/example/glasses-radar"
+Repository = "https://github.com/example/glasses-radar"
+Issues = "https://github.com/example/glasses-radar/issues"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["glasses_radar*"]
+
+[tool.setuptools.package-data]
+glasses_radar = ["py.typed"]
+"" = ["data/*.json"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+asyncio_mode = "auto"
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"

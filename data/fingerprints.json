@@ -1,0 +1,289 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "version": "1.0.0",
+  "description": "Known BLE fingerprints for smart glasses detection",
+  "last_updated": "2024-01-01",
+  "fingerprints": [
+    {
+      "id": "meta-ray-ban-gen2",
+      "name": "Meta Ray-Ban Smart Glasses (Gen 2)",
+      "vendor": "Meta / EssilorLuxottica",
+      "notes": "Ray-Ban Stories and Meta Ray-Ban second generation. Uses Facebook/Meta manufacturer ID.",
+      "enabled": true,
+      "manufacturer_ids": [
+        1177
+      ],
+      "service_uuids": [
+        "0000fe59-0000-1000-8000-00805f9b34fb",
+        "0000180a-0000-1000-8000-00805f9b34fb"
+      ],
+      "name_patterns": [
+        "Ray-Ban",
+        "RayBan",
+        "Meta Ray"
+      ],
+      "rssi_threshold": -70,
+      "confidence_weights": {
+        "manufacturer_id": 50,
+        "service_uuid": 30,
+        "name_pattern": 40
+      },
+      "match_threshold": 40
+    },
+    {
+      "id": "meta-ray-ban-gen1",
+      "name": "Ray-Ban Stories (Gen 1)",
+      "vendor": "Meta / EssilorLuxottica",
+      "notes": "First generation Ray-Ban Stories smart glasses released 2021.",
+      "enabled": true,
+      "manufacturer_ids": [
+        1177,
+        756
+      ],
+      "service_uuids": [
+        "0000fe59-0000-1000-8000-00805f9b34fb"
+      ],
+      "name_patterns": [
+        "Ray-Ban",
+        "Stories",
+        "RayBan Stories"
+      ],
+      "rssi_threshold": -70,
+      "confidence_weights": {
+        "manufacturer_id": 50,
+        "service_uuid": 30,
+        "name_pattern": 40
+      },
+      "match_threshold": 40
+    },
+    {
+      "id": "bose-frames-alto",
+      "name": "Bose Frames Alto",
+      "vendor": "Bose Corporation",
+      "notes": "Bose Frames Alto audio sunglasses with BLE connectivity.",
+      "enabled": true,
+      "manufacturer_ids": [
+        2291
+      ],
+      "service_uuids": [
+        "0000febe-0000-1000-8000-00805f9b34fb",
+        "0000180a-0000-1000-8000-00805f9b34fb",
+        "0000110b-0000-1000-8000-00805f9b34fb"
+      ],
+      "name_patterns": [
+        "Bose Frames",
+        "Bose Alto",
+        "BoseFrames"
+      ],
+      "rssi_threshold": -70,
+      "confidence_weights": {
+        "manufacturer_id": 50,
+        "service_uuid": 30,
+        "name_pattern": 40
+      },
+      "match_threshold": 40
+    },
+    {
+      "id": "bose-frames-rondo",
+      "name": "Bose Frames Rondo",
+      "vendor": "Bose Corporation",
+      "notes": "Bose Frames Rondo round-frame audio glasses with BLE.",
+      "enabled": true,
+      "manufacturer_ids": [
+        2291
+      ],
+      "service_uuids": [
+        "0000febe-0000-1000-8000-00805f9b34fb",
+        "0000180a-0000-1000-8000-00805f9b34fb"
+      ],
+      "name_patterns": [
+        "Bose Frames",
+        "Bose Rondo",
+        "BoseFrames"
+      ],
+      "rssi_threshold": -70,
+      "confidence_weights": {
+        "manufacturer_id": 50,
+        "service_uuid": 30,
+        "name_pattern": 40
+      },
+      "match_threshold": 40
+    },
+    {
+      "id": "bose-frames-tenor",
+      "name": "Bose Frames Tenor / Soprano",
+      "vendor": "Bose Corporation",
+      "notes": "Bose Frames Tenor and Soprano models with open-ear audio.",
+      "enabled": true,
+      "manufacturer_ids": [
+        2291
+      ],
+      "service_uuids": [
+        "0000febe-0000-1000-8000-00805f9b34fb"
+      ],
+      "name_patterns": [
+        "Bose Frames",
+        "Bose Tenor",
+        "Bose Soprano"
+      ],
+      "rssi_threshold": -70,
+      "confidence_weights": {
+        "manufacturer_id": 50,
+        "service_uuid": 30,
+        "name_pattern": 40
+      },
+      "match_threshold": 40
+    },
+    {
+      "id": "tcl-nxtwear-s",
+      "name": "TCL NXTWEAR S",
+      "vendor": "TCL Communication",
+      "notes": "TCL NXTWEAR S AR-style glasses with display capabilities.",
+      "enabled": true,
+      "manufacturer_ids": [
+        13875
+      ],
+      "service_uuids": [
+        "0000180a-0000-1000-8000-00805f9b34fb",
+        "00001800-0000-1000-8000-00805f9b34fb"
+      ],
+      "name_patterns": [
+        "NXTWEAR",
+        "TCL NXTWEAR",
+        "NxtWear"
+      ],
+      "rssi_threshold": -70,
+      "confidence_weights": {
+        "manufacturer_id": 50,
+        "service_uuid": 30,
+        "name_pattern": 40
+      },
+      "match_threshold": 40
+    },
+    {
+      "id": "tcl-nxtwear-g",
+      "name": "TCL NXTWEAR G",
+      "vendor": "TCL Communication",
+      "notes": "TCL NXTWEAR G glasses with improved display and audio.",
+      "enabled": true,
+      "manufacturer_ids": [
+        13875
+      ],
+      "service_uuids": [
+        "0000180a-0000-1000-8000-00805f9b34fb"
+      ],
+      "name_patterns": [
+        "NXTWEAR",
+        "NXTWEAR G",
+        "TCL NXTWEAR"
+      ],
+      "rssi_threshold": -70,
+      "confidence_weights": {
+        "manufacturer_id": 50,
+        "service_uuid": 30,
+        "name_pattern": 40
+      },
+      "match_threshold": 40
+    },
+    {
+      "id": "amazon-echo-frames",
+      "name": "Amazon Echo Frames",
+      "vendor": "Amazon",
+      "notes": "Amazon Echo Frames with Alexa integration and open-ear audio.",
+      "enabled": true,
+      "manufacturer_ids": [
+        1371
+      ],
+      "service_uuids": [
+        "0000fe03-0000-1000-8000-00805f9b34fb",
+        "0000180a-0000-1000-8000-00805f9b34fb"
+      ],
+      "name_patterns": [
+        "Echo Frames",
+        "EchoFrames",
+        "Echo Frame"
+      ],
+      "rssi_threshold": -70,
+      "confidence_weights": {
+        "manufacturer_id": 50,
+        "service_uuid": 30,
+        "name_pattern": 40
+      },
+      "match_threshold": 40
+    },
+    {
+      "id": "vuzix-blade",
+      "name": "Vuzix Blade Smart Glasses",
+      "vendor": "Vuzix Corporation",
+      "notes": "Vuzix Blade AR smart glasses with waveguide display.",
+      "enabled": true,
+      "manufacturer_ids": [
+        2400
+      ],
+      "service_uuids": [
+        "6e400001-b5a3-f393-e0a9-e50e24dcca9e",
+        "0000180a-0000-1000-8000-00805f9b34fb"
+      ],
+      "name_patterns": [
+        "Vuzix",
+        "Blade",
+        "Vuzix Blade"
+      ],
+      "rssi_threshold": -70,
+      "confidence_weights": {
+        "manufacturer_id": 50,
+        "service_uuid": 30,
+        "name_pattern": 40
+      },
+      "match_threshold": 40
+    },
+    {
+      "id": "snap-spectacles-v3",
+      "name": "Snap Spectacles (v3)",
+      "vendor": "Snap Inc.",
+      "notes": "Snap Spectacles third generation with dual cameras for 3D capture.",
+      "enabled": true,
+      "manufacturer_ids": [
+        2362
+      ],
+      "service_uuids": [
+        "0000180a-0000-1000-8000-00805f9b34fb"
+      ],
+      "name_patterns": [
+        "Spectacles",
+        "Snap Spectacles",
+        "Snap Specs"
+      ],
+      "rssi_threshold": -70,
+      "confidence_weights": {
+        "manufacturer_id": 50,
+        "service_uuid": 30,
+        "name_pattern": 40
+      },
+      "match_threshold": 40
+    },
+    {
+      "id": "inmo-air",
+      "name": "INMO Air AR Glasses",
+      "vendor": "INMO",
+      "notes": "INMO Air lightweight AR smart glasses with standalone operation.",
+      "enabled": true,
+      "manufacturer_ids": [],
+      "service_uuids": [
+        "0000180a-0000-1000-8000-00805f9b34fb"
+      ],
+      "name_patterns": [
+        "INMO",
+        "INMO Air",
+        "InmoAir"
+      ],
+      "rssi_threshold": -70,
+      "confidence_weights": {
+        "manufacturer_id": 50,
+        "service_uuid": 10,
+        "name_pattern": 60
+      },
+      "match_threshold": 50
+    }
+  ]
+}
